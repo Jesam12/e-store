@@ -1,5 +1,5 @@
 import Navbar from './Components/Navbar/Navbar';
-import { BrowserRoutter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Shop from './Pages/Shop';
 import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="">
       {/*settng up navigation link*/}
-      <BrowserRoutter>
+      <BrowserRouter>
           <Navbar/>
           <Routes>
             <Route path="/" element={<Shop/>}></Route>
@@ -25,7 +25,7 @@ function App() {
             <Route path="/login" element={<LoginSignup/>}></Route>
 
           </Routes>
-      </BrowserRoutter>
+      </BrowserRouter>
       <Navbar/>
     </div>
   );
