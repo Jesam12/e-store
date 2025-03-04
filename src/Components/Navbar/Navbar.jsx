@@ -5,6 +5,9 @@ import logo from "../Assets/logo.png"
 import cart_icon from "../Assets/cart_icon.png"
 import { Link } from 'react-router-dom';
 
+
+
+
 const Navbar = () => {
 
   //state variable to make the navgation on shop responsive
@@ -18,10 +21,10 @@ const Navbar = () => {
         </div>
         <ul className='nav-menu'> 
           {/*Using the link (Link) tag to set the navgation menu with react router  */}
-            <li onClick={() =>{setMenu("shop")}}><Link to="/">Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
-            <li onClick={() =>{setMenu("mens")}}><Link to="/mens">Men</Link>{menu==="mens"?<hr/>:<></>}</li>
-            <li onClick={() =>{setMenu("womens")}}><Link to="/womens">Women</Link>{menu==="womens"?<hr/>:<></>}</li>
-            <li onClick={() =>{setMenu("kids")}}><Link to="/kids">Kids</Link>{menu==="kids"?<hr/>:<></>}</li>
+            <li onClick={() =>{setMenu("shop")}}><Link style={{ textDecoration: "none"}} to="/">Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
+            {/*<li onClick={() =>{setMenu("mens")}}><Link style={{ textDecoration: "none"}} to="/mens">Men</Link>{menu==="mens"?<hr/>:<></>}</li>
+            <li onClick={() =>{setMenu("womens")}}><Link style={{ textDecoration: "none"}} to="/womens">Women</Link>{menu==="womens"?<hr/>:<></>}</li>
+            <li onClick={() =>{setMenu("kids")}}><Link style={{ textDecoration: "none"}} to="/kids">Kids</Link>{menu==="kids"?<hr/>:<></>}</li>*/}
         </ul>
         <div className="nav-login-cart">
           {/*Using the link (Link) tag to set the navgation menu with react router  */}
